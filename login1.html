@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Login Form</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <!-- Stylesheet -->
         <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
     </head>
     <body>
         <div class="wrapper login-1">
@@ -14,23 +14,23 @@
                     <div class="login-text">
                         <h2>Welcome Back</h2>
                         <p>Create your account.</p>
-                        <a class="btn" href="signup1.html">Sign Up</a>
+                        <a class="btn" href="signup.html">Sign Up</a>
                     </div>
                 </div>
                 <div class="col-right">
                     <div class="login-form">
                         <h2>Login</h2>
-                        <form>
+                        <form id="login-form">
                             <p>
                                 <label>Username or email address<span>*</span></label>
-                                <input type="text" placeholder="Username or Email" required>
+                                <input type="text" id="login-username" placeholder="Username or Email" required>
                             </p>
                             <p>
                                 <label>Password<span>*</span></label>
-                                <input type="password" placeholder="Password" required>
+                                <input type="password" id="login-password" placeholder="Password" required>
                             </p>
                             <p>
-                                <input type="submit" value="Sign In" />
+                                <input type="submit" value="Sign In">
                             </p>
                             <p>
                                 <a href="">Forget Password?</a>
@@ -39,7 +39,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </body>
 </html>
