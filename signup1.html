@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Signup Form</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <!-- Stylesheet -->
         <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
     </head>
     <body>
         <div class="wrapper login-1">
@@ -14,24 +14,27 @@
                     <div class="login-text">
                         <h2>Join Us</h2>
                         <p>Already have an account?</p>
-                        <a class="btn" href="login1.html">Log In</a>
+                        <a class="btn" href="login.html">Log In</a>
                     </div>
                 </div>
                 <div class="col-right">
                     <div class="login-form">
                         <h2>Sign Up</h2>
-                        
-                        <form>
+                        <form id="signup-form">
                             <p>
                                 <label>Full Name<span>*</span></label>
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" id="signup-name" placeholder="Your Name" required>
                             </p>
                             <p>
                                 <label>Email Address<span>*</span></label>
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" id="signup-email" placeholder="Email" required>
                             </p>
                             <p>
                                 <label>Password<span>*</span></label>
+                                <input type="password" id="signup-password" placeholder="Password" required>
+                            </p>
+                            <p>
+                                <label>Confirm Password<span>*</span></label>
                                 <input type="password" placeholder="Password" required>
                             </p>
                             <p>
@@ -56,9 +59,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
-       
     </body>
 </html>
